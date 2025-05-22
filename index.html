@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWA Pogoda - Aktualna Lokalizacja</title>
+    <meta
+      name="description"
+      content="Prosta aplikacja pogodowa PWA - aktualna lokalizacja."
+    />
+    <meta name="theme-color" content="#2196f3" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+  </head>
+  <body id="index-page">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Aktualna Pogoda</a></li>
+          <li><a href="/favorites.html">Ulubione Lokalizacje</a></li>
+          <li><a href="/add-favorite.html">Dodaj Ulubione</a></li>
+        </ul>
+      </nav>
+      <h1>Pogoda dla Twojej Lokalizacji</h1>
+    </header>
+    <main>
+      <section id="weather-info">
+        <h2>Aktualna Pogoda</h2>
+        <div id="location">Pobieranie lokalizacji...</div>
+        <div id="temperature">-</div>
+        <div id="description">-</div>
+        <div id="details"></div>
+        <div id="error-message" class="error"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Moja PWA Pogoda</p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>

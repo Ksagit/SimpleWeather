@@ -1,0 +1,217 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #2196f3;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover,
+nav li a.active {
+    background-color: #1976d2;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+#weather-info div,
+#favorite-weather-info div {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#location,
+#fav-location {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2196f3;
+}
+
+#temperature,
+#fav-temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+#description,
+#fav-description {
+    font-style: italic;
+    color: #555;
+}
+
+#details p,
+#fav-details p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.error {
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 15px;
+    display: none;
+}
+
+.success {
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 15px;
+    display: none;
+}
+
+#add-favorite-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+#add-favorite-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#location-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#add-favorite-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+#add-favorite-form button:hover {
+    background-color: #388E3C;
+}
+
+#favorite-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#favorite-list li {
+    background-color: #e3f2fd;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #bbdefb;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#favorite-list li:hover {
+    background-color: #bbdefb;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav li a {
+        width: calc(100% - 30px);
+        display: block;
+    }
+
+    main {
+        padding: 0 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    #add-favorite-form {
+        flex-direction: column;
+    }
+
+    #add-favorite-form button {
+        width: 100%;
+    }
+}

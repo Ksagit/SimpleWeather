@@ -1,0 +1,22 @@
+{
+  "name": "Moja PWA Pogoda",
+  "short_name": "Pogoda PWA",
+  "description": "Prosta aplikacja pogodowa PWA pokazująca aktualną pogodę i ulubione lokalizacje.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2196f3",
+  "theme_color": "#2196f3",
+  "icons": [
+    {
+      "src": "/icons/small_icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/big_icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "portrait"
+}

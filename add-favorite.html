@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWA Pogoda - Dodaj Ulubione</title>
+    <meta
+      name="description"
+      content="Dodaj nową ulubioną lokalizację do aplikacji pogodowej PWA."
+    />
+    <meta name="theme-color" content="#2196f3" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+  </head>
+  <body id="add-favorite-page">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Aktualna Pogoda</a></li>
+          <li><a href="/favorites.html">Ulubione Lokalizacje</a></li>
+          <li><a href="/add-favorite.html">Dodaj Ulubione</a></li>
+        </ul>
+      </nav>
+      <h1>Dodaj Ulubioną Lokalizację</h1>
+    </header>
+    <main>
+      <section id="add-favorite-section">
+        <h2>Zapisz Nową Ulubioną Lokalizację</h2>
+        <form id="add-favorite-form">
+          <label for="location-input">Wprowadź nazwę miasta:</label>
+          <input type="text" id="location-input" required />
+          <button type="submit">Dodaj do Ulubionych</button>
+        </form>
+        <div id="form-error-message" class="error"></div>
+        <div id="form-success-message" class="success"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="current-year"></span> Moja PWA Pogoda</p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
